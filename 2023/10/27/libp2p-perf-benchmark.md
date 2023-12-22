@@ -19,7 +19,7 @@ In this article, I will show you how to benchmark the network transfer using [pe
 Let's print help first:
 
 ```
-     Running `/Users/quantong/Code/github.com/libp2p/rust-libp2p/target/debug/perf -h`
+     Running `rust-libp2p/target/debug/perf -h`
 Usage: perf [OPTIONS]
 
 Options:
@@ -34,7 +34,7 @@ Options:
 Run in server mode:
 
 ```
-     Running `/Users/quantong/Code/github.com/libp2p/rust-libp2p/target/debug/perf --server-address '127.0.0.1:8080' --run-server`
+     Running `rust-libp2p/target/debug/perf --server-address '127.0.0.1:8080' --run-server`
 [2023-10-27T07:17:09.543Z INFO  libp2p_swarm] Local peer id: 12D3KooWPxXR3Me5pS7UjRg2gPVk9A7Se4nhEVBT9GPifjAwpiWX
 [2023-10-27T07:17:09.545Z INFO  perf] Listening on /ip4/127.0.0.1/tcp/8080
 [2023-10-27T07:17:09.545Z INFO  perf] Listening on /ip4/127.0.0.1/udp/8080/quic-v1
@@ -43,7 +43,7 @@ Run in server mode:
 In another terminal, try to upload/download 100MB:
 
 ```
-     Running `/Users/quantong/Code/github.com/libp2p/rust-libp2p/target/debug/perf --server-address '127.0.0.1:8080' --transport tcp --upload-bytes 104857600 --download-bytes 104857600`
+     Running `rust-libp2p/target/debug/perf --server-address '127.0.0.1:8080' --transport tcp --upload-bytes 104857600 --download-bytes 104857600`
 [2023-10-27T07:21:14.922Z INFO  libp2p_swarm] Local peer id: 12D3KooWCwLib8hXRpVYNZFFnjBpQeqdKfFNgQUTj4mpJ2qyGdiZ
 [2023-10-27T07:21:14.922Z INFO  perf] start benchmark: custom
 [2023-10-27T07:21:14.930Z INFO  perf] established connection in 0.0076 s
@@ -88,7 +88,7 @@ $ sudo dnctl pipe 1 config delay 10ms
 Benchmark again:
 
 ```
-Running `/Users/quantong/Code/github.com/libp2p/rust-libp2p/target/debug/perf --server-address '127.0.0.1:8080' --transport tcp --upload-bytes 104857600 --download-bytes 104857600`
+Running `rust-libp2p/target/debug/perf --server-address '127.0.0.1:8080' --transport tcp --upload-bytes 104857600 --download-bytes 104857600`
 [2023-10-27T07:58:43.515Z INFO  perf] uploaded 100.00 MiB in 8.4413 s (94.77 Mbit/s), downloaded 100.00 MiB in 8.2188 s (97.34 Mbit/s)
 {"type":"final","timeSeconds":16.689302458,"uploadBytes":104857600,"downloadBytes":104857600}
 ```
@@ -110,7 +110,7 @@ BKT Prot ___Source IP/port____ ____Dest. IP/port____ Tot_pkt/bytes Pkt/Byte Drp
 ```
 
 ```
-Running `/Users/quantong/Code/github.com/libp2p/rust-libp2p/target/debug/perf --server-address '127.0.0.1:8080' --transport tcp --upload-bytes 104857600 --download-bytes 104857600`
+Running `rust-libp2p/target/debug/perf --server-address '127.0.0.1:8080' --transport tcp --upload-bytes 104857600 --download-bytes 104857600`
 [2023-10-27T08:33:58.098Z INFO  perf] uploaded 100.00 MiB in 9.1012 s (87.90 Mbit/s), downloaded 100.00 MiB in 2.2653 s (353.16 Mbit/s)
 {"type":"final","timeSeconds":11.3747555,"uploadBytes":104857600,"downloadBytes":104857600}
 ```
