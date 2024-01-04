@@ -98,7 +98,7 @@ Create a new cargo package:
 $ cargo new hello_cargo
 ```
 
-Open `src/main.rc` and add the following code:
+Open `src/main.rs` and add the following code:
 
 ```rust
 fn main() {
