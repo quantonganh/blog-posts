@@ -34,5 +34,6 @@ I found [uses.tech](https://uses.tech/) and would like to add myself.
 #### Productivity
 - Task management: [taskwarrior](https://taskwarrior.org/)
 - Note taking: [Obsidian](https://obsidian.md/)
+- Maintain habits: [Loop Habit Tracker](https://github.com/iSoron/uhabits)
 
 [My dotfiles](https://github.com/quantonganh/dotfiles)
