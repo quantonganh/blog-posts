@@ -45,7 +45,7 @@ My personal development projects include building my blog from scratch, automati
 
 **Bit Flippers Ltd | Software Engineer | 07/2017 - 09/2019**
 
-- Built a dedicated [social network solution for the electronic music industry](https://www.bookya.com/) based on a microservices architecture, utilizing gRPC and Protocol Buffers.
+- Built a dedicated social network solution for the electronic music industry based on a microservices architecture, utilizing gRPC and Protocol Buffers.
 - Fully integrated an issue tracker system with Git and CI and streamline the deployment process.
 - Developed various tools, such as infrastructure configuration, backup snapshots cleanup, and metric collection, to improve operational efficiency.
 - Implemented an auto-update feature in a Qt cross-platform app using Sparkle/WinSparkle.
